@@ -648,7 +648,7 @@ function sumComment(array, dataType){
 function generateCommentLink(index){
 	var comment = rawCommentArray[index];
 	if (commentsQueried){
-		var rv = "http://www.reddit.com/r/";
+		var rv = "https://www.reddit.com/r/";
 		rv += comment.subreddit;
 		rv += "/comments/";
 		rv += comment.link_id.substring(3);
@@ -659,7 +659,7 @@ function generateCommentLink(index){
 		rv += "?context=3";
 	}
 	else {
-		var rv = "http://www.reddit.com" + comment.permalink;
+		var rv = "https://www.reddit.com" + comment.permalink;
 	}
 	return rv;
 }
